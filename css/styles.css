@@ -34,6 +34,7 @@
      list-style: none;
  }
  .title {
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -109,6 +110,7 @@
     
 }
 .hero-title{
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
@@ -136,6 +138,7 @@
 
 /*------FEATURES-----*/
 .features-sub-title{
+font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
@@ -203,6 +206,7 @@ cursor: pointer;
 }
 
 .portfolio-elem{
+font-weight: 700;
 font-size: 18px;
 line-height: 2.0;
 letter-spacing: 0.06em;
@@ -211,6 +215,7 @@ color: var(--second-text-color);
 }
 
 .portfolio-text{
+font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 color: var(--primary-body-color);
