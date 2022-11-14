@@ -23,6 +23,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em
+
  }
  
     
@@ -39,13 +40,6 @@
     letter-spacing: 0.03em;
     color: var(--second-text-color);
  }
- .team-name{
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    color: var(--second-text-color);
-    
-    }
 
 .filter-btn, 
 .filter-btn-current {
@@ -90,6 +84,15 @@
 .header-link:focus{
     color: var(--accent-color);
 }
+.header-contact{
+    color: var(--primary-body-color);
+}
+
+.header-contact:hover,
+.header-contact:focus{
+    color: var(--accent-active-color);
+}
+
 
 
 .header-contact{
@@ -133,14 +136,26 @@
 
 /*------FEATURES-----*/
 .features-sub-title{
+font-size: 14px;
 line-height: 1.14;
+letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--second-text-color);
 }
 
 
 .hidden-title{
-    display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-elem{
@@ -151,11 +166,22 @@ color: var(--primary-body-color)
 .team{
     background: var(--background-second-color);
 }
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
 .team-image{
     background-color: var(--second-body-color);
 }
 .team-name-text{
-color: var(--primary-body-color)
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--primary-body-color)
 
 }
 
@@ -168,11 +194,12 @@ cursor: pointer;
 .filter-btn:focus{
     background-color: var(--accent-color);
     color: var(--second-body-color);
+    box-shadow: rgba(0, 0, 0, 0.25);
 }
 .filter-btn-current{
     background-color: var(--accent-color);
     color: var(--second-body-color);
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow:rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-elem{
@@ -186,7 +213,6 @@ color: var(--second-text-color);
 .portfolio-text{
 font-size: 16px;
 line-height: 1.88;
-letter-spacing: 0.03em;
 color: var(--primary-body-color);
 
 }
@@ -204,11 +230,15 @@ color: var(--second-body-color)
     color: var(--second-body-color); 
 }
 
-.footer-contacts-address{
+.address-link{
 color: var(--second-body-color);
 }
 
-.footer-contacts-info{
+.info-link{
 color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts:hover,
+.footer-contacts:focus{
+    color: var(--accent-active-color);
 }
 
