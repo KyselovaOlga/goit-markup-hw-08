@@ -258,7 +258,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 10px 32px;
     border-radius: 4px;
     margin-top: 30px;
-    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -267,6 +268,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px var(--hero-btn-shadow-color);
 }
 
+/*------MODAL-----*/
 .backdrop{
     position: fixed;
     top:0;
@@ -302,18 +304,26 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.close-icon{
+
+.btn-close{
     position: absolute;
+    cursor: pointer;
     width: 30px;
     height: 30px;
     top: 8px;
     right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: var(--second-body-color);
-    fill:var(--logo-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 6px; 
+    border: 1px solid rgba(0, 0, 0, 0.1);  
 }
+.close-icon{
+    fill:var(--logo-color);  
+}
+
+
 /*------FEATURES-----*/
 
 
@@ -550,7 +560,8 @@ cursor: pointer;
 border: none;
 padding: 6px 22px;
 border-radius: 4px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
