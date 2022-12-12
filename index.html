@@ -47,10 +47,11 @@
             <button type="button" class="hero-btn btn" data-modal-open>Замовити послуги</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
-                        <form class="contact-form">
                         
+                        <form class="contact-form">
+                            <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
                             <div class="form-field">
+                                
                                 <label for="name" class="modal-label">Ім'я</label>
                                 <div class="input-field">
                             <input type="text" class="modal-input" name="name" id="name">
@@ -76,11 +77,11 @@
                             </div>
                         </div>
                             <div class="form-field">
-                            <label class="modal-label">Коментар
+                            <label for="comments" class="modal-label">Коментар</label>
                             <textarea name="comments" rows="8" placeholder="Введіть текст" class="comment-area"></textarea>
-                            </label>
+                            
                         </div>
-                        <div class="form-field">
+                        <div class="checkbox-field">
                             <input type="checkbox" name="policy" id="policy" class="checkbox-policy visually-hidden">
                             
                             <label for="policy" class="policy-label">Погоджуюся з розсилкою та приймаю<span><a href="" class="policy-doc">Умови договору</a></span></label>
