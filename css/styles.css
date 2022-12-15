@@ -399,6 +399,13 @@ margin-bottom: 4px;
     border-color:var(--accent-color);
     outline: none;
 }
+.comment-field{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
 .comment-area{
     width: 100%;
     height: 120px;
@@ -421,9 +428,7 @@ margin-bottom: 4px;
     outline: none;
 }
 
-.checkbox-field{
-    margin-top: 20px;
-}
+
 .policy-label{
     display: flex;
     justify-content: center;
