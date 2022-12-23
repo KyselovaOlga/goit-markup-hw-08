@@ -1,0 +1,20 @@
+.hero-btn{
+    font-family: inherit;
+    font-weight: 700;
+    @include button;
+   
+    cursor: pointer;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 4px;
+    margin-top: 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus{
+    background: var(--accent-active-color);
+    box-shadow: 0px 4px 4px var(--hero-btn-shadow-color);
+}
+}
+
+

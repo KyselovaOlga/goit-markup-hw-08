@@ -1,0 +1,22 @@
+@mixin font( $fs, $fw, $lh, $ls){
+    
+    font-size: $fs + px;
+    font-weight: $fw;
+    line-height: calc ($lh / $fs) ;
+    letter-spacing: $ls + em;
+} 
+    
+@mixin sub-title-font( $fs:14, $fw:700, $lh:16, $ls:0.03){
+    
+    font-size: $fs + px;
+    font-weight: $fw;
+    line-height: calc ($lh / $fs) ;
+    letter-spacing: $ls + em;
+}  
+@mixin button ( $fs:16, $lh:26){
+    
+    font-size: $fs + px;
+    line-height: calc ($lh / $fs);
+   
+    
+} 

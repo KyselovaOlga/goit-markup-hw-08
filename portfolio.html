@@ -9,30 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     
     <header class="header">
-        <div class="container">
-        <a href="./index.html"class="header-logo link"> <span class="web">Web</span>Studio</a>
+        <div class="container">    
+            <a href="./index.html"class="logo header__logo link"> <span>Web</span><span class="logo--dark-color">Studio</span></a>
         
-    <nav class="header-navy">
-    <ul class="header-list list">
-        <li class="header-list-item"><a href="./index.html" class="header-link link">Студія</a></li>
-        <li class="header-list-item"><a href="./portfolio.html"class="header-link current  link">Портфоліо</a></li>
-        <li class="header-list-item"><a href="./index.html"class="header-link link">Контакти</a></li>
+            
+        <nav class="navigation">     
+        <ul class="navigation__list list">
+            <li class="header-list-item"><a href="./index.html" class="navigation__link link">Студія</a></li>
+            <li class="header-list-item"><a href="./portfolio.html"class="navigation__link current link">Портфоліо</a></li>
+            <li class="header-list-item"><a href="./index.html"class="navigation__link link">Контакти</a></li>
+        </ul>
+    
+    </nav>
+    
+    <ul class="contact-list header-second-list list">
+      <li class="contact-list__items">
+        <a href="mailto:info@devstudio.com" class="contact-list__link link">
+            <svg width="16" height="12" class="contact-list__icons"><use href="./img/icons.svg#icon-envelope"></use> </svg>
+            info@devstudio.com</a></li>
+      <li class="contact-list__items">
+        <a href="tel:+380961111111" class="contact-list__link  link"><svg width="10" height="16" class="contact-list__icons"><use href="./img/icons.svg#icon-smartphone"></use> </svg>
+            +38 096 111 11 11</a></li>
     </ul>
-</nav>
-<ul class="contact-list list">
-    <li class="contacts-items">
-      <a href="mailto:info@devstudio.com" class="header-contact link">
-          <svg width="16" height="12" class="contact-icons"><use href="./img/icons.svg#icon-envelope"></use> </svg>
-          info@devstudio.com</a></li>
-    <li class="contacts-items">
-      <a href="tel:+380961111111" class="header-contact link"><svg width="10" height="16" class="contact-icons"><use href="./img/icons.svg#icon-smartphone"></use> </svg>
-          +38 096 111 11 11</a></li>
-  </ul>
 </div>
 
         </header>
@@ -43,20 +47,20 @@
                 <div class="container">
                 <h1 class="hidden-title visually-hidden">Фільтр</h1>
                 <ul class="filter-list list">
-                    <li><button type="button" class="filter-btn-current">Усі</button></li>
-                    <li><button type="button" class="filter-btn">Веб-сайти</button></li>
-                    <li><button type="button" class="filter-btn">Додатки</button></li>
-                    <li><button type="button" class="filter-btn">Дизайн</button></li>
-                    <li><button type="button" class="filter-btn">Маркетинг</button></li>
+                    <li><button type="button" class="filter-list__btn filter-btn-current">Усі</button></li>
+                    <li><button type="button" class="filter-list__btn">Веб-сайти</button></li>
+                    <li><button type="button" class="filter-list__btn">Додатки</button></li>
+                    <li><button type="button" class="filter-list__btn">Дизайн</button></li>
+                    <li><button type="button" class="filter-list__btn">Маркетинг</button></li>
                 </ul>
 
            
-                <ul class="portfolio-list list">
-                <li class="portfolio-list-item">
+                <ul class="grid list">
+                <li class="grid__item">
                     
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb">       
-                    <img class="image-port" src="./img/portfolio_1.jpg" alt="Веб-сайт"
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb">       
+                    <img class="grid__image" src="./img/portfolio_1.jpg" alt="Веб-сайт"
                     width="370">
                     <div class="overlay">
                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
@@ -64,16 +68,16 @@
                     </div>
                    </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem">Технокряк </h2>
-                            <p class="portfolio-text">Веб-сайт</p>
+                        <h2 class="border-box__elem">Технокряк </h2>
+                            <p class="border-box__text">Веб-сайт</p>
                     </div>
                
                 </a>   
                         
                 </li>
-                <li class="portfolio-list-item">
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb">  
+                <li class="grid__item">
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb">  
                     <img src="./img/portfolio_2.jpg" alt="Дизайн"
                     width="370">
                     <div class="overlay">
@@ -82,15 +86,15 @@
                     </div>
                         </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                            <p class="portfolio-text">Дизайн</p>
+                        <h2 class="border-box__elem">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                            <p class="border-box__text">Дизайн</p>
                         
                     </div>
                 </a>
                 </li>
-                <li class="portfolio-list-item">
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb">  
+                <li class="grid__item">
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb">  
                     <img src="./img/portfolio_3.jpg" alt="Додаток"
                     width="370">
                     <div class="overlay">
@@ -99,15 +103,15 @@
                     </div>
                         </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem">Ресторан <span lang="en">Seafood</span></h2>
-                            <p class="portfolio-text">Додаток</p>
+                        <h2 class="border-box__elem">Ресторан <span lang="en">Seafood</span></h2>
+                            <p class="border-box__text">Додаток</p>
                         
                     </div>
                 </a>
                 </li>
-                <li class="portfolio-list-item">
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb"> 
+                <li class="grid__item">
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb"> 
                     <img src="./img/portfolio_4.jpg" alt="Маркетинг"
                     width="370">
                     <div class="overlay">
@@ -116,15 +120,15 @@
                     </div>
                         </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem">Проєкт <span lang="en">Prime</span></h2>
-                            <p class="portfolio-text">Маркетинг</p>
+                        <h2 class="border-box__elem">Проєкт <span lang="en">Prime</span></h2>
+                            <p class="border-box__text">Маркетинг</p>
                         
                     </div>
                 </a>
                 </li>
-                <li class="portfolio-list-item">
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb"> 
+                <li class="grid__item">
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb"> 
                     <img src="./img/portfolio_5.jpg" alt="Додаток"
                     width="370">
                     <div class="overlay">
@@ -133,15 +137,15 @@
                     </div>
                         </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem">Проєкт <span lang="en">Boxes</span></h2>
-                            <p class="portfolio-text">Додаток</p>
+                        <h2 class="border-box__elem">Проєкт <span lang="en">Boxes</span></h2>
+                            <p class="border-box__text">Додаток</p>
                         
                     </div>
                 </a>
                 </li>
-                <li class="portfolio-list-item">
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb"> 
+                <li class="grid__item">
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb"> 
                     <img src="./img/portfolio_6.jpg" alt="Веб-сайт"
                     width="370">
                     <div class="overlay">
@@ -150,15 +154,15 @@
                     </div>
                         </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem"><span lang="en">Inspiration has no Borders</span></h2>
-                            <p class="portfolio-text">Веб-сайт</p>
+                        <h2 class="border-box__elem"><span lang="en">Inspiration has no Borders</span></h2>
+                            <p class="border-box__text">Веб-сайт</p>
                         
                     </div>
                 </a>
                 </li>
-                <li class="portfolio-list-item">
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb"> 
+                <li class="grid__item">
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb"> 
                     <img src="./img/portfolio_7.jpg" alt="Дизайн"
                     width="370">
                     <div class="overlay">
@@ -167,16 +171,16 @@
                     </div>
                         </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem">Видання <span lang="en">Limited Edition</span></h2>
-                            <p class="portfolio-text">Дизайн</p>
+                        <h2 class="pborder-box__elem">Видання <span lang="en">Limited Edition</span></h2>
+                            <p class="border-box__text">Дизайн</p>
                         
                     </div>
                 </a>
                     
                 </li>
-                <li class="portfolio-list-item">
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb"> 
+                <li class="grid__item">
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb"> 
                     <img src="./img/portfolio_8.jpg" alt="Маркетинг"
                     width="370">
                     <div class="overlay">
@@ -185,15 +189,15 @@
                     </div>
                     </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem">Проєкт <span lang="en">LAB</span></h2>
-                            <p class="portfolio-text">Маркетинг</p>
+                        <h2 class="border-box__elem">Проєкт <span lang="en">LAB</span></h2>
+                            <p class="border-box__text">Маркетинг</p>
                         
                     </div>
                 </a>
                 </li>
-                <li class="portfolio-list-item">
-                    <a href="" class="portfolio-links link">
-                        <div class="portf-thumb"> 
+                <li class="grid__item">
+                    <a href="" class="grid__links link">
+                        <div class="grid__thumb"> 
                     <img src="./img/portfolio_9.jpg" alt="Додаток"
                     width="370">
                     <div class="overlay">
@@ -202,8 +206,8 @@
                     </div>
                         </div>
                     <div class="border-box">
-                        <h2 class="portfolio-elem"> <span lang="en">Growing Business</span></h2>
-                            <p class="portfolio-text">Додаток</p>
+                        <h2 class="border-box__elem"> <span lang="en">Growing Business</span></h2>
+                            <p class="border-box__text">Додаток</p>
                         
                     </div>
                 </a> 
@@ -213,33 +217,32 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="container footer-info">
-                <div class="main-footer">
-            <a href="./index.html"class="footer-logo link"> <span class="web">Web</span><span class="studio">Studio</span></a>
-            <ul class="adress-list list">
-                <li><a href="https://goo.gl/maps/fhh8UTQa3tChmRMs6" target="_blank" rel="noopener norefferrer nofollow" class="footer-contacts address-link link">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li><a href="tel:+380961111111" class="footer-contacts info-link link">+38 096 111 11 11</a></li>
-                <li><a href="mailto:info@devstudio.com"class="footer-contacts info-link link">info@devstudio.com</a></li>
+            <div class="container">
+                <div>
+            <a href="./index.html"class="logo link"><span>Web</span><span class="logo--light-color">Studio</span></a>
+            <ul class="connection-list list">
+                <li><a href="https://goo.gl/maps/fhh8UTQa3tChmRMs6" target="_blank" rel="noopener norefferrer nofollow" class="connection-list__link connection-list__address link">м. Київ, пр-т Лесі Українки, 26</a></li>
+                <li><a href="tel:+380961111111" class="connection-list__link  link">+38 096 111 11 11</a></li>
+                <li><a href="mailto:info@devstudio.com"class="connection-list__link  link">info@devstudio.com</a></li>
             </ul>
         </div>
-            <div class="join-footer">
-            <p class="join-footer-title">приєднуйтесь</p>
-            <ul class="footer-soc-list list">
-                <li class="footer-soc-items"><a href="#" class="footer-soc-links link"><svg width="20" height="20" class="footer-soc-icons"><use href="./img/icons.svg#icon-insta"></use> </svg></a></li>
-                <li class="footer-soc-items"><a href="#" class="footer-soc-links link"><svg width="20" height="20" class="footer-soc-icons"><use href="./img/icons.svg#icon-twitter"></use> </svg></a></li>
-                <li class="footer-soc-items"><a href="#" class="footer-soc-links link"><svg width="20" height="20" class="footer-soc-icons"><use href="./img/icons.svg#icon-facebook"></use> </svg></a></li>
-                <li class="footer-soc-items"><a href="#" class="footer-soc-links link"><svg width="20" height="20" class="footer-soc-icons"><use href="./img/icons.svg#icon-linked"></use> </svg></a></li>
+            <div class="join join-form">
+            <p class="join__title">приєднуйтесь</p>
+            <ul class="soc-list footer-soc-list list">
+                <li class="soc-list__items"><a href="#" class="soc-list__links link"><svg width="20" height="20" class="footer-soc-icons"><use href="./img/icons.svg#icon-insta"></use> </svg></a></li>
+                <li class="soc-list__items"><a href="#" class="soc-list__links link"><svg width="20" height="20" class="footer-soc-icons"><use href="./img/icons.svg#icon-twitter"></use> </svg></a></li>
+                <li class="soc-list__items"><a href="#" class="soc-list__links link"><svg width="20" height="20" class="footer-soc-icons"><use href="./img/icons.svg#icon-facebook"></use> </svg></a></li>
+                <li class="soc-list__items"><a href="#" class="soc-list__links link"><svg width="20" height="20" class="footer-soc-icons"><use href="./img/icons.svg#icon-linked"></use> </svg></a></li>
             </ul>
         </div>
-        
-        <form class="field-footer">
-            <label for="footer-mail" class="subscribe">Підпишіться на розсилку</label>
-                <input type="email"class="leave-mail" name="mail" id="footer-mail" placeholder="E-mail">
-            <button class="subsribe-btn">Підписатися
-                <svg width="24" height="24" class="send-icon"> <use href="./img/icons.svg#icon-icon-send"></use> </svg>
-            </button>
-            
-</form>
+        <form class="subscribe-form field-footer">
+                                <label for="footer-mail" class="subscribe-form__label">Підпишіться на розсилку</label>
+                                    <input type="email"class="subscribe-form__mail" name="mail" id="footer-mail" placeholder="E-mail">
+                                <button class="subsribe-btn footer-btn">Підписатися
+                                    <svg width="24" height="24" class="subsribe-btn__icon"icon"> <use href="./img/icons.svg#icon-icon-send"></use> </svg>
+                                </button>
+                                
+        </form>
         </footer>
     
 </body>
