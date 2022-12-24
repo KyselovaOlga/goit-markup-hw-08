@@ -30,7 +30,8 @@
 .main-btn{
     font-family: inherit;
     font-weight: 700;
-    @include button;
+    font-size: 16px;
+    line-height: 1.62;
     color: var(--second-body-color);
     background-color: var(--accent-color);
     cursor: pointer;

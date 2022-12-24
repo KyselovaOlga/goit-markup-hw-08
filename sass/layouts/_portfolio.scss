@@ -12,7 +12,8 @@
 .filter-list__btn{
 font-family: inherit;
 font-weight: 500;
-@include button;
+font-size: 16px;
+line-height: 1.62;
 cursor: pointer;
 background: var(--background-second-color);
 border: none;
