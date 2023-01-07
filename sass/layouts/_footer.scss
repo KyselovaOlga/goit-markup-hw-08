@@ -4,13 +4,45 @@
     padding-bottom: 60px;   
     & .container{
         display: flex;
-        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+
+        @include tablet{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+            flex-direction: row;
+        }
+        @include desktop{
+            align-items: baseline;
+        }
+            
+        }
     }
        
-}
 
+ .footer-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+   @include tablet{
+    margin-right: 165px;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   @include desktop{
+    display: block;
+    margin-right: 70px;
+    margin-left: 0px;
+   }
+ }
 
 .connection-list__link{
+   
     font-size: 14px;
     line-height: 1.7;
     color: var(--info-link-color);
@@ -22,9 +54,14 @@
     
 }
 .logo__studio{
+    align-items: center;
+    
     color: var(--second-body-color); 
 }
 .connection-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     & li + li{
         margin-top: 9px;
@@ -40,8 +77,15 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .join-form{
-    margin-left: 70px;    
     
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+
+     @include desktop{
+       margin-left: 70px;  
+     }
 }
 
 .join__title{
@@ -51,14 +95,25 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--second-body-color);
+text-align: center;
+
+ @include tablet{
+    text-align: center;
+ }
+ @include desktop{
+    text-align: left;
+ }
 }
 
 .soc-list{
     display: flex;
     
+    
     & li + li{
         margin-left: 10px;
     }
+
+  
 }
 .footer-soc-list{
     margin-top: 20px;
@@ -87,22 +142,40 @@ color: var(--second-body-color);
 
 
 .field-footer{
-    margin-left: auto;
     
+    
+    margin-top: 60px;
+    
+ 
+    @include desktop{
+      
+    margin-left: auto;
+    }
 }
+
+
 .subscribe-form__label{
-@extend %flex-align;
+// @extend %flex-align;
+  
+
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 20px;
-color: var(--second-body-color)
+color: var(--second-body-color);
+
+
+@include desktop{
+    display: flex;
+    align-items: center;
+}
 
 }
 
 .subscribe-form__mail{
+    
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;

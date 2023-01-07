@@ -1,3 +1,11 @@
+.about .container{
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}
+
 .picture-list{
     display: flex;
     & li + li{

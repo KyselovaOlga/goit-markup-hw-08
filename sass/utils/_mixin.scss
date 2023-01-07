@@ -2,7 +2,7 @@
     
     font-size: $fs + px;
     font-weight: $fw;
-    line-height: calc ($lh / $fs) ;
+    line-height: calc($lh / $fs);
     letter-spacing: $ls + em;
 } 
     
@@ -10,13 +10,41 @@
     
     font-size: $fs + px;
     font-weight: $fw;
-    line-height: calc ($lh / $fs) ;
+    line-height: calc($lh / $fs);
     letter-spacing: $ls + em;
 }  
-@mixin button ( $fs:16, $lh:26){
+@mixin button ($fs:16, $lh:26){
     
     font-size: $fs + px;
-    line-height: calc ($lh / $fs);
+    line-height: calc($lh / $fs);
    
     
 } 
+@mixin tel {
+    @media screen and (min-width: 480px){
+        @content;
+    }
+    
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+    
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px){
+        @content;
+    }
+    
+}
+
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  @content;
+}
+}
