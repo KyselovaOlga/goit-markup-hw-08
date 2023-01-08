@@ -1,5 +1,7 @@
-.about .container{
+.about{
+    
     display: none;
+    
 
     @include desktop {
         display: block;

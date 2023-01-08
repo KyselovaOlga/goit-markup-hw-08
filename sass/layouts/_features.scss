@@ -57,9 +57,15 @@
     @include sub-title-font;
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align:center; 
 
-    @include tel{
-        text-align:center;  
+    @include tablet{
+        text-align:left;  
+    
+    }
+
+    @include desktop{
+        text-align: left;
     }
     
  

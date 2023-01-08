@@ -16,7 +16,13 @@
             flex-direction: row;
         }
         @include desktop{
+            
+            display: flex;
             align-items: baseline;
+            // flex-direction:row;
+            justify-content:left;
+            
+            flex-wrap: nowrap;
         }
             
         }
@@ -35,9 +41,13 @@
    }
 
    @include desktop{
+    align-items: flex-start;
+    margin-right: 0;
     display: block;
     margin-right: 70px;
     margin-left: 0px;
+    
+   
    }
  }
 
@@ -66,6 +76,9 @@
     & li + li{
         margin-top: 9px;
     }
+    @include desktop{
+        align-items: flex-start;
+    }
 }
 
 .connection-list__address{
@@ -78,13 +91,18 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .join-form{
     
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
 
+  @include tablet{
+    margin-top: 0;
+  }
+
      @include desktop{
-       margin-left: 70px;  
+    //    margin-left: 70px;  
+       align-items:flex-start;
      }
 }
 
@@ -101,7 +119,7 @@ text-align: center;
     text-align: center;
  }
  @include desktop{
-    text-align: left;
+    text-align:left;
  }
 }
 
@@ -139,23 +157,55 @@ text-align: center;
 }
 
 
-
+.footer-grid{
+    @include desktop{
+        display: flex;
+    }
+        
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // flex-direction: column;
+        // // gap: 20px;
+        // @include tablet{
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // flex-direction: column;
+        // }
+}
 
 .field-footer{
     
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
     
     margin-top: 60px;
+
+    @include tablet{
+    margin-top: auto;
+    }
     
  
     @include desktop{
+        display: flex;
+        align-items:center;
+        margin-left: auto;
+       
+        
+        justify-content: center;
+        // flex-direction: row;
       
-    margin-left: auto;
+        
+        //  flex-wrap: nowrap;
     }
 }
 
 
 .subscribe-form__label{
-// @extend %flex-align;
+@extend %flex-align;
+justify-content: center;
   
 
 font-weight: 700;
@@ -169,7 +219,8 @@ color: var(--second-body-color);
 
 @include desktop{
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    justify-content: left;
 }
 
 }
@@ -182,7 +233,7 @@ color: var(--second-body-color);
     outline: none;
     background-color: transparent;
     color: var(--second-body-color);
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -191,11 +242,20 @@ color: var(--second-body-color);
     &:focus{
     border-color: var(--accent-color);
 }
+     @include desktop{
+        width: 358px;
+        height: 50px;
+     }
 }
 
 
 .subsribe-btn{
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -212,11 +272,22 @@ color: var(--second-body-color);
       &:focus{
     background: var(--accent-active-color);
     box-shadow: 0px 4px 4px var(--hero-btn-shadow-color);
+      }
+
+
+    @include desktop{
+        // display: flex;
+        // flex-direction: row;
+    }
 
 }
-}
 .footer-btn{
+    margin-top: 20px;
+
+    @include desktop{
     margin-left: 12px; 
+    margin-top: 0;
+    }
 }
 
 .subsribe-btn__icon{
