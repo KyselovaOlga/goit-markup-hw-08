@@ -1695,12 +1695,31 @@ body {
   color: var(--accent-color);
 }
 
-/*------HEADER-----*/
-/*------HERO-----*/
-/*------MODAL-----*/
-/*------FEATURES-----*/
-/*------ABOUT----*/
-/*------TEAM-----*/
-/*-----CLIENTS----*/
-/*------PORTFOLIO-----*/
-/*------FOOTER-----*//*# sourceMappingURL=main.css.map */
+.about {
+  background-color: #84A178;
+}
+
+.about__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.about__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.about-btn {
+  background: #F8D24E;
+  border-radius: 10px;
+}/*# sourceMappingURL=main.css.map */
