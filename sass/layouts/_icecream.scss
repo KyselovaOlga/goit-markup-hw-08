@@ -1,8 +1,21 @@
-.about{
-    background-color: #84A178;
+.aboutice{
+    background-color:#84A178;
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    background-image: url(../img/cow_desktop.jpg);
+    background-repeat: no-repeat;
+    
 }
 
-.about__title{
+// .aboutice__block{
+    
+// }
+
+.aboutice__title{
+    // display: flex;
+    // width:210px;
+    // align-items: center;
 font-weight: 400;
 font-size: 30px;
 line-height: 38px;
@@ -13,7 +26,8 @@ text-transform: uppercase;
 color: #FCFCFC;
 }
 
-.about__subtitle{
+.aboutice__subtitle{
+    // align-items: center;
     font-weight: 700;
 font-size: 18px;
 line-height: 22px;
@@ -25,7 +39,8 @@ text-transform: uppercase;
 color: #FCFCFC;
 }
 
-.about-btn{
+.aboutice-btn{
 background: #F8D24E;
 border-radius: 10px;
+padding: 12px 35px;
 }
